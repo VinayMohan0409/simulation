@@ -1,0 +1,7 @@
+{
+ "windows": 3744,
+ "train": 2016,
+ "val": 1728,
+ "recordings": 156,
+ "index_only": true
+}

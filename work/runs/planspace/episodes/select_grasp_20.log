@@ -1,0 +1,161 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+demo_793: start 0.518 m, start ok False, hold ok False -> eligible
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+demo_131: start 0.482 m, start ok False, hold ok False -> eligible
+demo_952: start 0.198 m, start ok False, hold ok False -> eligible
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+demo_907: start 0.199 m, start ok False, hold ok False -> eligible
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+demo_1207: start 0.198 m, start ok False, hold ok False -> eligible
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+demo_769: start 0.265 m, start ok False, hold ok False -> eligible
+demo_731: start 0.576 m, start ok False, hold ok False -> eligible
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+demo_118: start 0.576 m, start ok False, hold ok False -> eligible
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+demo_831: start 0.346 m, start ok False, hold ok False -> eligible
+demo_170: start 0.576 m, start ok False, hold ok False -> eligible
+selected ['demo_133', 'demo_606', 'demo_1364', 'demo_1208', 'demo_1341', 'demo_1311', 'demo_1008', 'demo_870', 'demo_686', 'demo_1076', 'demo_665', 'demo_1142', 'demo_793', 'demo_131', 'demo_952', 'demo_907', 'demo_1207', 'demo_769', 'demo_731', 'demo_118']

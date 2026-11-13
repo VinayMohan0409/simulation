@@ -1,0 +1,200 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:08:44] [A2] production scene: 1024 FK hand + 5120 camera points (8349 seen); FK vs mesh hand rows max 0.00 mm
+[12:09:19] [A2] demo_133_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1243352, "slurm_job": "1130794", "time": "12:05:54"} (10 s ago) -> skip
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Adding the last offset due to no valid region in right [-3.96944444e-01  3.04215359e-16  4.45000000e-01]
+Adding the last offset due to no valid region in right [-3.96944444e-01  3.04215359e-16  4.45000000e-01]
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:12:10] [A2] production scene: 1024 FK hand + 5120 camera points (12866 seen); FK vs mesh hand rows max 0.00 mm
+[12:32:39] [A2] demo_133: success False (max_replans), 80 replans, final 222.6 mm, 1605 s
+[12:32:39] [A2] demo_606_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1243979, "slurm_job": "1130794", "time": "12:09:19"} (18 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:33:10] [A2] production scene: 1024 FK hand + 5120 camera points (5727 seen); FK vs mesh hand rows max 0.00 mm
+[12:37:45] [A2] demo_606: success False (max_replans), 80 replans, final 361.0 mm, 1706 s
+[12:37:45] [A2] demo_1364_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1243352, "slurm_job": "1130794", "time": "12:32:39"} (9 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:38:25] [A2] production scene: 1024 FK hand + 5120 camera points (4269 seen); FK vs mesh hand rows max 0.00 mm
+[12:42:44] [A2] demo_1208: success True (success), 16 replans, final 118.7 mm, 299 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:43:17] [A2] production scene: 1024 FK hand + 5120 camera points (6922 seen); FK vs mesh hand rows max 0.00 mm
+[12:47:41] [A2] demo_1341: success True (success), 20 replans, final 110.1 mm, 296 s
+[12:47:43] [A2] demo_1364: success True (success), 60 replans, final 113.8 mm, 904 s
+[12:47:43] [A2] demo_1311_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1243979, "slurm_job": "1130794", "time": "12:47:41"} (3 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:48:09] [A2] production scene: 1024 FK hand + 5120 camera points (11864 seen); FK vs mesh hand rows max 0.00 mm
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:48:11] [A2] production scene: 1024 FK hand + 5120 camera points (11282 seen); FK vs mesh hand rows max 0.00 mm
+[12:51:37] [A2] demo_1008: success True (success), 16 replans, final 125.5 mm, 233 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[12:52:05] [A2] production scene: 1024 FK hand + 5120 camera points (4688 seen); FK vs mesh hand rows max 0.00 mm

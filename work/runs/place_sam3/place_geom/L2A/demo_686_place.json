@@ -1,0 +1,86 @@
+{
+ "demo": "demo_686",
+ "task": "place",
+ "arm": "L2A",
+ "seed": 2286905869,
+ "success": true,
+ "start_object_found": true,
+ "goal_object_found": true,
+ "goal_object_err_mm": 21.240831724918994,
+ "place_ident": {
+  "start": {
+   "n_free": 3584,
+   "source": "held_and_left",
+   "n_points": 218,
+   "n_held": 183,
+   "n_left": 186,
+   "n_pieces": 4,
+   "extent_cm": [
+    8.5,
+    11.6,
+    8.3
+   ]
+  },
+  "goal": {
+   "n_arrived": 208,
+   "source": "arrived_cluster",
+   "transport": {
+    "support": {
+     "held": 0,
+     "released": 18
+    },
+    "hypothesis": "released",
+    "support_frac": 0.08
+   },
+   "n_points": 336,
+   "n_new": 227,
+   "extent_cm": [
+    9.8,
+    9.2,
+    8.4
+   ]
+  }
+ },
+ "holds_at_end": true,
+ "stop_reason": "success",
+ "n_replans": 2,
+ "final_error_mm": 84.58209181018127,
+ "wall_seconds": 65.9,
+ "records": [
+  {
+   "replan": 0,
+   "error_mm": 86.01575310244527,
+   "commanded_mm": 36.542080400063,
+   "executed": "best_sample",
+   "plan_cost": 44.52723354805109,
+   "predicted_error_mm": 101.265625,
+   "streak": 5,
+   "plan_seconds": 24.189,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 78,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 23.499599881579393,
+   "phase_changed": false
+  },
+  {
+   "replan": 1,
+   "error_mm": 84.58209181018127,
+   "commanded_mm": 6.9142671418542125,
+   "executed": "best_sample",
+   "plan_cost": 42.90556677130973,
+   "predicted_error_mm": 109.33377075195312,
+   "streak": 10,
+   "plan_seconds": 19.13,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 71,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 18.75035201759464
+  }
+ ]
+}

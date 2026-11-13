@@ -1,0 +1,364 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Adding the last offset due to no valid region in right [-4.61598297e-01 -3.50997409e-16  4.45000000e-01]
+Adding the last offset due to no valid region in right [-4.61598297e-01 -3.50997409e-16  4.45000000e-01]
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[09:41:49] [A1] production scene: 1024 FK hand + 5120 camera points (8349 seen); FK vs mesh hand rows max 0.00 mm
+[10:07:51] [A1] demo_133: success True (success), 65 replans, final 165.0 mm, 1739 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[10:08:32] [A1] production scene: 1024 FK hand + 5120 camera points (12866 seen); FK vs mesh hand rows max 0.00 mm
+[10:42:11] [A1] demo_606: success False (max_replans), 80 replans, final 361.1 mm, 2059 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[10:42:48] [A1] production scene: 1024 FK hand + 5120 camera points (5727 seen); FK vs mesh hand rows max 0.00 mm
+[11:16:32] [A1] demo_1364: success False (max_replans), 80 replans, final 275.2 mm, 2061 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[11:17:14] [A1] production scene: 1024 FK hand + 5120 camera points (4269 seen); FK vs mesh hand rows max 0.00 mm
+[11:34:50] [A1] demo_1208: success True (success), 43 replans, final 125.4 mm, 1098 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[11:35:35] [A1] production scene: 1024 FK hand + 5120 camera points (6922 seen); FK vs mesh hand rows max 0.00 mm
+[11:45:13] [A1] demo_1341_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1224448, "slurm_job": "1130794", "time": "11:34:50"} (12 s ago) -> skip
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[11:48:01] [A1] production scene: 1024 FK hand + 5120 camera points (11864 seen); FK vs mesh hand rows max 0.00 mm
+[11:52:45] [A1] demo_1341_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1224448, "slurm_job": "1130794", "time": "11:34:50"} (5 s ago) -> skip
+[11:52:45] [A1] demo_1311_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1240457, "slurm_job": "1130794", "time": "11:45:13"} (3 s ago) -> skip
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[11:53:01] [A1] demo_1341: success True (success), 44 replans, final 148.7 mm, 1091 s
+[11:53:01] [A1] demo_1311_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1240457, "slurm_job": "1130794", "time": "11:45:13"} (19 s ago) -> skip
+[11:53:01] [A1] demo_1008_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1241256, "slurm_job": "1130794", "time": "11:52:45"} (16 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[11:53:38] [A1] production scene: 1024 FK hand + 5120 camera points (4688 seen); FK vs mesh hand rows max 0.00 mm
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Using y offset to the kitchen counter when placing the robot: -0.45
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Num of valid categories:  122
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+compute new reset action for right controller undder absolute mode
+[11:55:37] [A1] production scene: 1024 FK hand + 5120 camera points (11282 seen); FK vs mesh hand rows max 0.00 mm
+[12:00:05] [A1] demo_1311: success True (success), 33 replans, final 149.8 mm, 892 s
+[12:00:05] [A1] demo_1008_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1241256, "slurm_job": "1130794", "time": "11:52:45"} (7 s ago) -> skip
+[12:00:05] [A1] demo_870_grasp.lock: held by {"host": "linnet.doc.ic.ac.uk", "pid": 1224448, "slurm_job": "1130794", "time": "11:53:01"} (2 s ago) -> skip
+[12:00:05] [A1] demo_686_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (59 s ago) -> skip
+[12:00:05] [A1] demo_1076_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (59 s ago) -> skip
+Exception ignored in: <function Renderer.__del__ at 0x77476653fd90>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 335, in __del__
+    self.close()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 321, in close
+    self._gl_context.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7746e302f3c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7747664f81c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7747664f81c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x774767503ac0>,
+	),
+	result = 0
+)
+Exception ignored in: <function GLContext.__del__ at 0x77476653f490>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 138, in __del__
+    self.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7746e302f3c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7747664f81c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7747664f81c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x774767503ac0>,
+	),
+	result = 0
+)
+[12:05:18] [A1] demo_870: success True (success), 35 replans, final 168.5 mm, 737 s
+[12:05:18] [A1] demo_686_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (11 s ago) -> skip
+[12:05:18] [A1] demo_1076_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (11 s ago) -> skip
+Exception ignored in: <function Renderer.__del__ at 0x7dae8a4a3d90>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 335, in __del__
+    self.close()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 321, in close
+    self._gl_context.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7dae06ae2b40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7dae8a4601c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7dae8a4601c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7dae8b2c7ac0>,
+	),
+	result = 0
+)
+Exception ignored in: <function GLContext.__del__ at 0x7dae8a4a3490>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 138, in __del__
+    self.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7dae06ae2b40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7dae8a4601c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7dae8a4601c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7dae8b2c7ac0>,
+	),
+	result = 0
+)
+[12:08:29] [A1] demo_1008: success True (success), 45 replans, final 129.4 mm, 945 s
+[12:08:29] [A1] demo_686_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (22 s ago) -> skip
+[12:08:29] [A1] demo_1076_grasp.lock: held by {"reserved": "Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz)."}
+ (22 s ago) -> skip
+Exception ignored in: <function Renderer.__del__ at 0x729fd2e93d90>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 335, in __del__
+    self.close()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 321, in close
+    self._gl_context.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x729f4f3ba840>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x729fd2e4c1c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x729fd2e4c1c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x729fd3e57ac0>,
+	),
+	result = 0
+)
+Exception ignored in: <function GLContext.__del__ at 0x729fd2e93490>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 138, in __del__
+    self.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x729f4f3ba840>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x729fd2e4c1c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x729fd2e4c1c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x729fd3e57ac0>,
+	),
+	result = 0
+)

@@ -1,0 +1,43 @@
+{
+ "arm": "A2",
+ "task": "reach",
+ "search_space": "action",
+ "execution": "direct",
+ "cem": {
+  "pop": 64,
+  "iters": 4,
+  "elite_frac": 0.2,
+  "min_std": 0.05,
+  "hold_candidate": true
+ },
+ "loop": {
+  "max_replans": 80,
+  "converge_mm": 10.0,
+  "stall_patience": 15,
+  "stall_tol_mm": 0.05,
+  "sustain_steps": 10
+ },
+ "exec": {
+  "max_step_mm": 60.0,
+  "ori_alpha": 0.5,
+  "raw_steps": 5
+ },
+ "checkpoint": "/vol/dissolve/vinay/latent-action-world-model/checkpoints/adaln_s0_k4_explore_lora/stage1.pt",
+ "prior": "/vol/dissolve/vinay/latent-action-world-model/checkpoints/adaln_s0_k4_explore_lora/prior.npz",
+ "g": "/vol/dissolve/vinay/latent-action-world-model/checkpoints/adaln_s0_k4_explore_lora/maps_achieved/g.pt",
+ "l2a": null,
+ "action_prior": "/vol/dissolve/vinay/latent-action-world-model/checkpoints/adaln_s0_k4_explore_lora/maps_achieved/action_prior.npz",
+ "scene": "production",
+ "demos": [
+  "demo_133",
+  "demo_606",
+  "demo_1364",
+  "demo_1208",
+  "demo_1341",
+  "demo_1311",
+  "demo_686",
+  "demo_1076",
+  "demo_665",
+  "demo_1142"
+ ]
+}

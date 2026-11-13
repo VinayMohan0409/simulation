@@ -1,0 +1,65 @@
+{
+ "demo": "demo_133",
+ "task": "reach",
+ "arm": "A2",
+ "seed": 1453734283,
+ "success": true,
+ "holds_at_end": true,
+ "stop_reason": "success",
+ "n_replans": 4,
+ "final_error_mm": 80.03549798741959,
+ "wall_seconds": 183.6,
+ "records": [
+  {
+   "replan": 0,
+   "error_mm": 178.4373608564466,
+   "commanded_mm": 49.06733750183005,
+   "executed": "best_sample",
+   "plan_cost": 183.03152978420258,
+   "predicted_error_mm": 99.95862579345703,
+   "streak": 0,
+   "plan_seconds": 14.423,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "phase_changed": false
+  },
+  {
+   "replan": 1,
+   "error_mm": 141.49206317296228,
+   "commanded_mm": 38.96540597080517,
+   "executed": "best_sample",
+   "plan_cost": 142.91079729795456,
+   "predicted_error_mm": 61.68254852294922,
+   "streak": 4,
+   "plan_seconds": 19.067,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "phase_changed": false
+  },
+  {
+   "replan": 2,
+   "error_mm": 81.92162791753817,
+   "commanded_mm": 74.7660037468198,
+   "executed": "best_sample",
+   "plan_cost": 115.51206934452057,
+   "predicted_error_mm": 32.97636795043945,
+   "streak": 9,
+   "plan_seconds": 18.997,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "phase_changed": false
+  },
+  {
+   "replan": 3,
+   "error_mm": 80.03549798741959,
+   "commanded_mm": 8.640140444781709,
+   "executed": "best_sample",
+   "plan_cost": 76.06031540036201,
+   "predicted_error_mm": 31.167221069335938,
+   "streak": 10,
+   "plan_seconds": 19.007,
+   "wm_calls": 256,
+   "fit_residual_mm": null
+  }
+ ]
+}

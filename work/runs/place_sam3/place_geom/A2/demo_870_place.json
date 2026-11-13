@@ -1,0 +1,122 @@
+{
+ "demo": "demo_870",
+ "task": "place",
+ "arm": "A2",
+ "seed": 2087218668,
+ "success": true,
+ "start_object_found": true,
+ "goal_object_found": true,
+ "goal_object_err_mm": 19.10969861879084,
+ "place_ident": {
+  "start": {
+   "n_free": 2634,
+   "source": "held_and_left",
+   "n_points": 175,
+   "n_held": 66,
+   "n_left": 171,
+   "n_pieces": 2,
+   "extent_cm": [
+    5.1,
+    4.3,
+    16.9
+   ]
+  },
+  "goal": {
+   "n_arrived": 246,
+   "source": "arrived_cluster",
+   "transport": {
+    "support": {
+     "held": 0,
+     "released": 0
+    },
+    "hypothesis": "held",
+    "support_frac": 0.0
+   },
+   "n_points": 247,
+   "n_new": 244,
+   "extent_cm": [
+    10.0,
+    15.6,
+    4.9
+   ]
+  }
+ },
+ "holds_at_end": true,
+ "stop_reason": "success",
+ "n_replans": 4,
+ "final_error_mm": 83.4590689059393,
+ "wall_seconds": 111.2,
+ "records": [
+  {
+   "replan": 0,
+   "error_mm": 114.77176058145159,
+   "commanded_mm": 53.49107325123262,
+   "executed": "best_sample",
+   "plan_cost": 60.25792651125401,
+   "predicted_error_mm": 119.12161254882812,
+   "streak": 0,
+   "plan_seconds": 26.859,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 74,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 19.37578423878222,
+   "phase_changed": false
+  },
+  {
+   "replan": 1,
+   "error_mm": 94.56997634213013,
+   "commanded_mm": 33.28251982152877,
+   "executed": "best_sample",
+   "plan_cost": 52.04680900697949,
+   "predicted_error_mm": 118.74217224121094,
+   "streak": 4,
+   "plan_seconds": 27.106,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 61,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 27.61417116301852,
+   "phase_changed": false
+  },
+  {
+   "replan": 2,
+   "error_mm": 87.3357866898674,
+   "commanded_mm": 12.16878867346754,
+   "executed": "best_sample",
+   "plan_cost": 61.919154306117505,
+   "predicted_error_mm": 119.24657440185547,
+   "streak": 9,
+   "plan_seconds": 14.38,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 77,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 21.916651610783976,
+   "phase_changed": false
+  },
+  {
+   "replan": 3,
+   "error_mm": 83.4590689059393,
+   "commanded_mm": 17.14483098069517,
+   "executed": "best_sample",
+   "plan_cost": 59.45523304906386,
+   "predicted_error_mm": 130.28053283691406,
+   "streak": 10,
+   "plan_seconds": 15.111,
+   "wm_calls": 256,
+   "fit_residual_mm": null,
+   "n_object_points": 104,
+   "object_source": "transport",
+   "object_hypothesis": "released",
+   "object_flag": null,
+   "object_centroid_err_mm": 24.838892470123987
+  }
+ ]
+}

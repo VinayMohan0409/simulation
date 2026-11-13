@@ -1,0 +1,103 @@
+{
+ "demo": "demo_1008",
+ "task": "place",
+ "arm": "A1",
+ "seed": 4138895384,
+ "success": true,
+ "start_object_found": true,
+ "goal_object_found": true,
+ "goal_object_err_mm": 20.818002453414753,
+ "place_ident": {
+  "start": {
+   "n_free": 12297,
+   "source": "held_and_left",
+   "n_points": 120,
+   "n_held": 110,
+   "n_left": 50,
+   "n_pieces": 1,
+   "extent_cm": [
+    6.9,
+    7.0,
+    7.3
+   ]
+  },
+  "goal": {
+   "n_arrived": 217,
+   "source": "transport_held",
+   "transport": {
+    "support": {
+     "held": 117,
+     "released": 0
+    },
+    "hypothesis": "held",
+    "support_frac": 0.97
+   },
+   "n_points": 171,
+   "extent_cm": [
+    7.3,
+    9.2,
+    7.9
+   ]
+  }
+ },
+ "holds_at_end": true,
+ "stop_reason": "success",
+ "n_replans": 3,
+ "final_error_mm": 91.19981343948373,
+ "wall_seconds": 108.6,
+ "records": [
+  {
+   "replan": 0,
+   "error_mm": 99.79049657706588,
+   "commanded_mm": 18.25125071777206,
+   "executed": "best_sample",
+   "plan_cost": 23.91284838540097,
+   "predicted_error_mm": 23.565946578979492,
+   "streak": 4,
+   "plan_seconds": 13.18,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.2900171185247424,
+   "n_object_points": 31,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 18.50130325092902,
+   "phase_changed": false
+  },
+  {
+   "replan": 1,
+   "error_mm": 92.43286411836935,
+   "commanded_mm": 18.715191196264133,
+   "executed": "best_sample",
+   "plan_cost": 27.285989401566916,
+   "predicted_error_mm": 23.512113571166992,
+   "streak": 9,
+   "plan_seconds": 13.271,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.4640677397719442,
+   "n_object_points": 39,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 19.206749802500845,
+   "phase_changed": false
+  },
+  {
+   "replan": 2,
+   "error_mm": 91.19981343948373,
+   "commanded_mm": 19.960805573185326,
+   "executed": "best_sample",
+   "plan_cost": 23.088390662104093,
+   "predicted_error_mm": 43.14931869506836,
+   "streak": 10,
+   "plan_seconds": 13.395,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.544051412594495,
+   "n_object_points": 39,
+   "object_source": "transport",
+   "object_hypothesis": "held",
+   "object_flag": null,
+   "object_centroid_err_mm": 22.732201742901317
+  }
+ ]
+}

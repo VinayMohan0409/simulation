@@ -1,0 +1,220 @@
+diff --git a/src/lawm/sim/dexwm/env/kitchen.py b/src/lawm/sim/dexwm/env/kitchen.py
+index 1717052..1b156e1 100644
+--- a/src/lawm/sim/dexwm/env/kitchen.py
++++ b/src/lawm/sim/dexwm/env/kitchen.py
+@@ -45,15 +45,66 @@ def build_env(env_args, control_freq, cameras=False):
+     return robosuite.make(**kwargs)
+ 
+ 
+-def open_demo(episode, settings):
+-    """Build the kitchen of a stored episode (DexWM's own reset places the demo's scene once) and wrap it."""
++def open_demo(episode, settings, fast=True):
++    """Build the kitchen of a stored episode and wrap it. fast: one build straight from the demo (its ep_meta for the Python-side fixtures and objects, its saved
++    scene xml for the sim); the old path (fast=False) builds a random kitchen, rebuilds it from ep_meta, then compiles the saved xml (DexWM's reset_to)."""
+     import robocasa.scripts.playback_utils as playback
+ 
+-    env = build_env(json.loads(episode["env_args"]), settings.control_freq, settings.cameras)
+-    playback.reset_to(env, dict(states=episode["states"][0], model=episode["model_file"], ep_meta=episode["ep_meta"]))
++    if fast:
++        env = build_env_from_demo(episode, settings.control_freq, settings.cameras)
++        env.sim.set_state_from_flattened(episode["states"][0])
++        env.sim.forward()
++    else:
++        env = build_env(json.loads(episode["env_args"]), settings.control_freq, settings.cameras)
++        playback.reset_to(env, dict(states=episode["states"][0], model=episode["model_file"], ep_meta=episode["ep_meta"]))
+     return DexWMEnv(env, episode, settings)
+ 
+ 
++def build_env_from_demo(episode, control_freq, cameras=False):
++    """build_env, but the constructor's single build is already the demo's kitchen: _load_model gets the demo's ep_meta (layout, style, fixtures, object configs;
++    no random sampling), the sim is compiled once from the demo's saved xml, and object placement sampling is skipped (the stored state sets every pose)."""
++    import robosuite
++    import robocasa.scripts.playback_utils as playback
++    from robosuite.environments.base import REGISTERED_ENVS
++
++    env_args = json.loads(episode["env_args"])
++    ep_meta = json.loads(episode["ep_meta"]) if episode.get("ep_meta") is not None else {}
++    cls = REGISTERED_ENVS[env_args["env_name"]]
++    load0, init0 = cls._load_model, cls._initialize_sim
++
++    def load(self):
++        self._ep_meta = dict(ep_meta)
++        self.deterministic_reset = True  # the constructor's reset must not sample placements
++        try:
++            load0(self)
++        except (FileNotFoundError, PermissionError):  # as reset_to: object assets moved since recording
++            if "object_cfgs" in self._ep_meta:
++                self._ep_meta["object_cfgs"] = playback.update_mjcf_paths(self._ep_meta["object_cfgs"])
++            load0(self)
++
++    def init_sim(self, xml_string=None):
++        if xml_string is not None:
++            return init0(self, xml_string)
++        xml = playback._prepare_xml(self, episode["model_file"])
++        try:
++            init0(self, xml)
++        except (FileNotFoundError, PermissionError, ValueError):  # as reset_to: asset paths of another machine
++            init0(self, playback.path_change(xml))
++
++    own = {k: cls.__dict__[k] for k in ("_load_model", "_initialize_sim") if k in cls.__dict__}
++    cls._load_model, cls._initialize_sim = load, init_sim
++    try:
++        env = build_env(env_args, control_freq, cameras)
++    finally:
++        for k in ("_load_model", "_initialize_sim"):
++            if k in own:
++                setattr(cls, k, own[k])
++            else:
++                delattr(cls, k)
++    env.deterministic_reset = False
++    return env
++
++
+ class DexWMEnv:
+     """One demo's kitchen: reset(task) switches to the task's start state and sets the goal from its target state; then observe(), step(action) and distance() serve the episode loop."""
+ 
+diff --git a/src/lawm/sim/dexwm/planning/plan_costs.py b/src/lawm/sim/dexwm/planning/plan_costs.py
+index 57feac5..3b068f4 100644
+--- a/src/lawm/sim/dexwm/planning/plan_costs.py
++++ b/src/lawm/sim/dexwm/planning/plan_costs.py
+@@ -48,6 +48,32 @@ def object_goal_cost_mm(pred_deltas, mask, weights, goal_centroid, start_centroi
+     return total
+ 
+ 
++def object_chamfer_cost_mm(pred_deltas, mask, weights, start_object, goal_object_points):
++    """Horizon-weighted one-sided Chamfer distance (mm): the mean distance of each predicted object point to the nearest goal-object point. One-sided (predicted -> goal) on
++    purpose: under partial views the visible start part only has to land ON the goal object, not cover it; far from the goal it behaves like the centroid distance."""
++    tree = cKDTree(np.asarray(goal_object_points, np.float64))
++    total = np.zeros(pred_deltas.shape[0], dtype=np.float64)
++    for k, wk in enumerate(weights):
++        if wk == 0.0:
++            continue
++        pred = start_object[None] + pred_deltas[:, k][:, mask, :]
++        total += wk * tree.query(pred.reshape(-1, 3))[0].reshape(pred.shape[:2]).mean(axis=1) * 1000.0
++    return total
++
++
++def attachment_cost_mm(pred_deltas, hand_mask, obj_mask, weights, start_hand_centroid, start_object_centroid):
++    """Horizon-weighted growth (mm) of the predicted hand-centroid to object-centroid distance over its start value: penalises the object moving away from the hand (0 while it stays or comes closer)."""
++    total = np.zeros(pred_deltas.shape[0], dtype=np.float64)
++    offset0 = float(np.linalg.norm(start_object_centroid - start_hand_centroid))
++    for k, wk in enumerate(weights):
++        if wk == 0.0:
++            continue
++        obj_c = start_object_centroid[None] + pred_deltas[:, k][:, obj_mask, :].mean(axis=1)
++        hand_c = start_hand_centroid[None] + pred_deltas[:, k][:, hand_mask, :].mean(axis=1)
++        total += wk * np.maximum(np.linalg.norm(obj_c - hand_c, axis=-1) - offset0, 0.0) * 1000.0
++    return total
++
++
+ def kabsch_batched(reference, points):
+     """Rotations (..., 3, 3) and translations (..., 3) with R @ reference[i] + t ~= points[..., i, :]; reference (n, 3), points (..., n, 3)."""
+     ca = reference.mean(axis=0)
+@@ -125,20 +151,25 @@ class CostWeights:
+     grasp_quality: float = 0.0
+     rigid_attachment: float = 0.0
+     grasp_tight: float = 0.0
++    attachment: float = 0.0
+ 
+ 
+ class PlanCost:
+     """The planner's cost of a population of predicted displacements (pop, n_steps, N, 3) for one replan: the scaled hand goal cost plus the weighted extra terms."""
+ 
+-    def __init__(self, coords0, goal, segment, finger_mask, weights, n_steps=5, last_weight=0.5):
+-        """Fix everything that does not depend on the candidates: masks, centroids and the start points of the fingers."""
++    def __init__(self, coords0, goal, segment, finger_mask, weights, n_steps=5, last_weight=0.5, goal_object_centroid=None, goal_object_points=None):
++        """Fix everything that does not depend on the candidates: masks, centroids and the start points of the fingers.
++        goal_object_centroid: given when the goal's object rows are not the observed object rows (production scene with object masks: the rows change every observation).
++        goal_object_points: the observed goal-object points (partial view); the object-goal term is then the one-sided Chamfer distance instead of the centroid distance."""
+         self.coords0, self.goal, self.weights = coords0, goal, weights
++        self.goal_object_points = None if goal_object_points is None or not len(goal_object_points) else goal_object_points
+         self.horizon = horizon_weights(n_steps, last_weight=last_weight)
+         self.hand_mask, self.object_mask = segment == SEG_HAND, segment == SEG_OBJECT
++        self.has_object = bool(self.object_mask.any())
+         self.finger_mask = finger_mask
+         self.start_hand, self.start_object = coords0[self.hand_mask], coords0[self.object_mask]
+-        self.start_object_centroid = self.start_object.mean(axis=0)
+-        self.goal_object_centroid = goal[self.object_mask].mean(axis=0)
++        self.start_object_centroid = self.start_object.mean(axis=0) if self.has_object else None
++        self.goal_object_centroid = goal_object_centroid if goal_object_centroid is not None else goal[self.object_mask].mean(axis=0) if self.has_object else None
+         self.start_fingers = self.start_hand[finger_mask] if finger_mask is not None else self.start_hand
+ 
+     def __call__(self, pred_deltas):
+@@ -151,7 +182,9 @@ class PlanCost:
+         extra = []
+         if w.object_still > 0.0:
+             extra.append(w.object_still * object_still_cost_mm(pred_deltas, self.object_mask, self.horizon))
+-        if w.object_goal > 0.0:
++        if w.object_goal > 0.0 and self.has_object and self.goal_object_points is not None:
++            extra.append(w.object_goal * object_chamfer_cost_mm(pred_deltas, self.object_mask, self.horizon, self.start_object, self.goal_object_points))
++        elif w.object_goal > 0.0 and self.has_object and self.goal_object_centroid is not None:
+             extra.append(w.object_goal * object_goal_cost_mm(pred_deltas, self.object_mask, self.horizon, self.goal_object_centroid, self.start_object_centroid))
+         if w.grasp_quality > 0.0:
+             extra.append(w.grasp_quality * grasp_quality_penalty(self.start_hand, self.start_object, pred_deltas, self.hand_mask, self.object_mask, self.finger_mask))
+@@ -159,6 +192,8 @@ class PlanCost:
+             extra.append(w.rigid_attachment * rigid_attachment_cost_mm(self.start_hand, self.start_object, pred_deltas, self.hand_mask, self.object_mask, self.horizon))
+         if w.grasp_tight > 0.0:
+             extra.append(w.grasp_tight * grasp_tight_cost_mm(pred_deltas, self.hand_mask, self.object_mask, self.horizon, self.start_object_centroid, self.start_fingers, self.finger_mask))
++        if w.attachment > 0.0 and self.has_object:
++            extra.append(w.attachment * attachment_cost_mm(pred_deltas, self.hand_mask, self.object_mask, self.horizon, self.start_hand.mean(axis=0), self.start_object_centroid))
+         if extra:
+             summed = extra[0]
+             for term in extra[1:]:
+diff --git a/src/lawm/sim/dexwm/planning/task_planner.py b/src/lawm/sim/dexwm/planning/task_planner.py
+index 7aadc93..c090b02 100644
+--- a/src/lawm/sim/dexwm/planning/task_planner.py
++++ b/src/lawm/sim/dexwm/planning/task_planner.py
+@@ -3,7 +3,7 @@ from __future__ import annotations
+ 
+ import numpy as np
+ 
+-from lawm.sim.costs import SEG_HAND
++from lawm.sim.costs import SEG_HAND, SEG_OBJECT
+ from lawm.sim.dexwm.planning.cem_replan import plan_replan, replan_rng
+ from lawm.sim.dexwm.planning.plan_costs import PlanCost
+ from lawm.sim.dexwm.planning.phase_gates import HoverGate, SecureGate
+@@ -14,23 +14,37 @@ EXECUTED_STEP = 0  # of the 5 predicted steps only the first is executed, then t
+ class TaskPlanner:
+     """Plans the replans of one episode: grasp hovers before it descends, place secures the grip before it carries, reach has no phases."""
+ 
+-    def __init__(self, task, goal, segment, finger_mask, model, seed, settings, weights, gates):
++    def __init__(self, task, goal, segment, finger_mask, model, seed, settings, weights, gates, goal_object_centroid=None, goal_object_points=None):
+         """Keep the goal cloud, the model adapter (model.prior = (mean, std) of the latents; model.decoder(coords, segment) -> decode(z) for an observed cloud) and the episode seed; the gate follows the task; weights = CostWeights (place: one per secure stage)."""
+         self.task, self.goal, self.segment, self.finger_mask = task, goal, segment, finger_mask
+         self.model, self.seed = model, seed
+         self.settings, self.weights = settings, weights
+-        self.gate = HoverGate(goal, segment, gates.hover) if task == "grasp" else SecureGate(gates.secure, weights) if task == "place" else None
++        self.goal_object_centroid, self.goal_object_points = goal_object_centroid, goal_object_points
++        staged_place = task == "place" and isinstance(weights, (list, tuple))  # single-stage place weights (e.g. planspace place_simple): no secure gate
++        self.gate = HoverGate(goal, segment, gates.hover) if task == "grasp" else SecureGate(gates.secure, weights) if staged_place else None
+ 
+-    def plan(self, coords, replan):
+-        """(hand points to execute (n_hand, 3) float32, the Plan) for the observed cloud at this replan."""
++    def plan(self, coords, replan, segment=None):
++        """(hand points to execute (n_hand, 3) float32, the Plan) for the observed cloud at this replan; segment: this observation's labels when they change between observations."""
++        segment = self.segment if segment is None else segment
+         goal = self.gate.goal if isinstance(self.gate, HoverGate) else self.goal
+         weights = self.gate.weights if isinstance(self.gate, SecureGate) else self.weights
+-        cost = PlanCost(coords, goal, self.segment, self.finger_mask, weights)
++        extra = {} if self.goal_object_centroid is None else dict(goal_object_centroid=self.goal_object_centroid)
++        if self.goal_object_points is not None:
++            extra["goal_object_points"] = self.goal_object_points
++        cost = PlanCost(coords, goal, segment, self.finger_mask, weights, **extra)
+         z_mean, z_std = self.model.prior
+-        plan = plan_replan(self.model.decoder(coords, self.segment), cost, z_mean, z_std, self.settings, replan_rng(self.seed, replan))
+-        hand = self.segment == SEG_HAND
++        plan = plan_replan(self.model.decoder(coords, self.model_segment(segment)), cost, z_mean, z_std, self.settings, replan_rng(self.seed, replan))
++        hand = segment == SEG_HAND
+         return (coords[hand] + plan.delta[EXECUTED_STEP][hand]).astype(np.float32), plan
+ 
++    def model_segment(self, segment):
++        """The labels the model adapter sees. With per-observation object masks (place, production scene + SAM 3) the scene rows are object / rest for the COST only; the
++        action-to-latent map was trained with every scene row labelled object (production.SEG_SCENE), so it gets that back (its object-centroid feature = the scene centroid).
++        Otherwise (reach, grasp, privileged scene) the segment is passed through unchanged."""
++        if segment is self.segment:
++            return segment
++        return np.where(segment == SEG_HAND, SEG_HAND, SEG_OBJECT).astype(segment.dtype)
++
+     def update(self, coords, replan):
+         """After a replan was executed: let the gate look at the observed cloud; True at the moment the phase changes."""
+         return self.gate is not None and self.gate.update(coords, self.segment, replan)

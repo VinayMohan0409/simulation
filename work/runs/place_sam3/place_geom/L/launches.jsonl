@@ -1,0 +1,3 @@
+{"time": "2026-11-13 13:17:26", "host": "gpu19", "pid": 1294441, "slurm_job": null, "demos": ["demo_133", "demo_606", "demo_1208", "demo_1341", "demo_870", "demo_686", "demo_1076", "demo_665", "demo_1142", "demo_793"]}
+{"time": "2026-11-13 13:17:56", "host": "gpu19", "pid": 1295578, "slurm_job": null, "demos": ["demo_133", "demo_606", "demo_1208", "demo_1341", "demo_870", "demo_686", "demo_1076", "demo_665", "demo_1142", "demo_793"]}
+{"time": "2026-11-13 14:07:13", "host": "gpu19", "pid": 1341025, "slurm_job": null, "demos": ["demo_131", "demo_907", "demo_769", "demo_118", "demo_831", "demo_170", "demo_1364", "demo_1311", "demo_1008", "demo_731"]}

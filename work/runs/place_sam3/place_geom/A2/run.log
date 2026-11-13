@@ -1,0 +1,356 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[15:15:23] [A2] production scene: 1024 FK hand + 5120 camera points (5805 seen); FK vs mesh hand rows max 0.00 mm
+[15:15:23] [A2] camera alignment to the FK robot: median [7.949175829292821, 8.613142714080846] mm per view (centre pose: True)
+[15:15:23] [A2] object (no segmentation model): start 205 pts (held_and_left), goal 320 pts (arrived_cluster; centroid 34 mm from the true target body, logged only)
+[15:15:24] [A2] start: 73 object rows of 5120 scene rows; goal object 121 points
+[15:16:39] [A2] demo_133: success True (success), 3 replans, final 66.9 mm, 120 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+[15:17:02] [A2] production scene: 1024 FK hand + 5120 camera points (3151 seen); FK vs mesh hand rows max 0.00 mm
+[15:17:02] [A2] camera alignment to the FK robot: median [7.489439311668714, 8.475149508020067] mm per view (centre pose: True)
+[15:17:03] [A2] object (no segmentation model): start 110 pts (held_and_left), goal 433 pts (arrived_cluster; centroid 31 mm from the true target body, logged only)
+[15:17:03] [A2] start: 58 object rows of 5120 scene rows; goal object 147 points
+[15:26:33] [A2] demo_606: success False (stalled), 21 replans, final 947.0 mm, 593 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[15:26:53] [A2] production scene: 1024 FK hand + 5120 camera points (4738 seen); FK vs mesh hand rows max 0.00 mm
+[15:26:53] [A2] camera alignment to the FK robot: median [6.619828932906268, 7.187045932606893] mm per view (centre pose: True)
+[15:26:54] [A2] object (no segmentation model): start 297 pts (held_and_left), goal 419 pts (arrived_cluster; centroid 34 mm from the true target body, logged only)
+[15:26:54] [A2] start: 92 object rows of 5120 scene rows; goal object 128 points
+[15:32:03] [A2] demo_1208: success True (success), 11 replans, final 31.5 mm, 330 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[15:32:25] [A2] production scene: 1024 FK hand + 5120 camera points (3825 seen); FK vs mesh hand rows max 0.00 mm
+[15:32:25] [A2] camera alignment to the FK robot: median [6.873193524405375, 8.419359184065705] mm per view (centre pose: True)
+[15:32:26] [A2] object (no segmentation model): start 140 pts (held_and_left), goal 187 pts (transport_held; centroid 25 mm from the true target body, logged only)
+[15:32:26] [A2] start: 73 object rows of 5120 scene rows; goal object 65 points
+[15:35:15] [A2] demo_1341: success True (success), 6 replans, final 61.2 mm, 193 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[15:35:38] [A2] production scene: 1024 FK hand + 5120 camera points (4204 seen); FK vs mesh hand rows max 0.00 mm
+[15:35:38] [A2] camera alignment to the FK robot: median [7.518235363159637, 7.236797266961029] mm per view (centre pose: True)
+[15:35:38] [A2] object (no segmentation model): start 175 pts (held_and_left), goal 247 pts (arrived_cluster; centroid 19 mm from the true target body, logged only)
+[15:35:38] [A2] start: 73 object rows of 5120 scene rows; goal object 95 points
+[15:37:06] [A2] demo_870: success True (success), 4 replans, final 83.5 mm, 111 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[15:37:26] [A2] production scene: 1024 FK hand + 5120 camera points (5493 seen); FK vs mesh hand rows max 0.00 mm
+[15:37:26] [A2] camera alignment to the FK robot: median [7.2167277605945435, 8.120599994278042] mm per view (centre pose: True)
+[15:37:27] [A2] object (no segmentation model): start 218 pts (held_and_left), goal 336 pts (arrived_cluster; centroid 21 mm from the true target body, logged only)
+[15:37:27] [A2] start: 74 object rows of 5120 scene rows; goal object 109 points
+[15:38:23] [A2] demo_686: success True (success), 2 replans, final 66.4 mm, 77 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[15:38:45] [A2] production scene: 1024 FK hand + 5120 camera points (5250 seen); FK vs mesh hand rows max 0.00 mm
+[15:38:45] [A2] camera alignment to the FK robot: median [6.811000015228353, 7.970265481378826] mm per view (centre pose: True)
+[15:38:46] [A2] object (no segmentation model): start 238 pts (held_and_left), goal 274 pts (arrived_cluster; centroid 22 mm from the true target body, logged only)
+[15:38:46] [A2] start: 81 object rows of 5120 scene rows; goal object 91 points
+[15:46:50] [A2] demo_1076: success False (stalled), 18 replans, final 315.8 mm, 507 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[15:47:10] [A2] production scene: 1024 FK hand + 5120 camera points (5058 seen); FK vs mesh hand rows max 0.00 mm
+[15:47:10] [A2] camera alignment to the FK robot: median [6.518565917033568, 7.77560573768936] mm per view (centre pose: True)
+[15:47:10] [A2] object (no segmentation model): start 392 pts (held_and_left), goal 290 pts (arrived_cluster; centroid 46 mm from the true target body, logged only)
+[15:47:10] [A2] start: 159 object rows of 5120 scene rows; goal object 89 points
+[15:55:10] [A2] demo_665_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "15:46:50"} (5 s ago) -> skip
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[15:55:19] [A2] demo_665: success False (stalled), 19 replans, final 267.3 mm, 510 s
+[15:55:19] [A2] demo_1142_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2710592, "slurm_job": "1142285", "time": "15:55:10"} (10 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[15:55:38] [A2] production scene: 1024 FK hand + 5120 camera points (4018 seen); FK vs mesh hand rows max 0.00 mm
+[15:55:38] [A2] camera alignment to the FK robot: median [6.924766315410564, 7.928382155732198] mm per view (centre pose: True)
+[15:55:39] [A2] object (no segmentation model): start 480 pts (held_and_left), goal 484 pts (arrived_cluster; centroid 20 mm from the true target body, logged only)
+[15:55:39] [A2] start: 211 object rows of 5120 scene rows; goal object 189 points
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[15:55:52] [A2] production scene: 1024 FK hand + 5120 camera points (5386 seen); FK vs mesh hand rows max 0.00 mm
+[15:55:52] [A2] camera alignment to the FK robot: median [7.408943695743145, 8.081050397533671] mm per view (centre pose: True)
+[15:55:52] [A2] object (no segmentation model): start 282 pts (held_and_left), goal 317 pts (arrived_cluster; centroid 27 mm from the true target body, logged only)
+[15:55:52] [A2] start: 90 object rows of 5120 scene rows; goal object 94 points
+[15:57:10] [A2] demo_1142: success True (success), 3 replans, final 63.0 mm, 121 s
+[15:57:10] [A2] demo_793_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "15:55:19"} (20 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[15:57:35] [A2] production scene: 1024 FK hand + 5120 camera points (5046 seen); FK vs mesh hand rows max 0.00 mm
+[15:57:35] [A2] camera alignment to the FK robot: median [7.195523102377635, 7.595496331144357] mm per view (centre pose: True)
+[15:57:36] [A2] object (no segmentation model): start 377 pts (held_and_left), goal 510 pts (arrived_cluster; centroid 24 mm from the true target body, logged only)
+[15:57:36] [A2] start: 124 object rows of 5120 scene rows; goal object 161 points
+[16:02:06] [A2] demo_793_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "15:55:19"} (27 s ago) -> skip
+[16:02:06] [A2] demo_131_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2710592, "slurm_job": "1142285", "time": "15:57:10"} (11 s ago) -> skip
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:37)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:47)
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+WARNING! gymnasium is not installed. We will try to use openai gym instead.
+Warning: make sure gym is installed if you want to use the GymWrapper.
+USE_TEST_SET: 0
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[16:05:38] [A2] production scene: 1024 FK hand + 5120 camera points (4957 seen); FK vs mesh hand rows max 0.00 mm
+[16:05:38] [A2] camera alignment to the FK robot: median [7.507516604538302, 8.262883983261542] mm per view (centre pose: True)
+[16:05:39] [A2] object (no segmentation model): start 432 pts (held_and_left), goal 464 pts (arrived_cluster; centroid 21 mm from the true target body, logged only)
+[16:05:39] [A2] start: 136 object rows of 5120 scene rows; goal object 144 points
+[16:07:17] [A2] demo_907: success True (success), 5 replans, final 86.5 mm, 312 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+[16:08:13] [A2] production scene: 1024 FK hand + 5120 camera points (10627 seen); FK vs mesh hand rows max 0.00 mm
+[16:08:13] [A2] camera alignment to the FK robot: median [7.534869057377872, 7.527818467235966] mm per view (centre pose: True)
+[16:08:14] [A2] object (no segmentation model): start 407 pts (held_and_left), goal 505 pts (arrived_cluster; centroid 45 mm from the true target body, logged only)
+[16:08:15] [A2] start: 78 object rows of 5120 scene rows; goal object 169 points
+R_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +Y direction
+compute new reset action for right controller undder absolute mode
+[16:07:54] [A2] production scene: 1024 FK hand + 5120 camera points (8705 seen); FK vs mesh hand rows max 0.00 mm
+[16:07:54] [A2] camera alignment to the FK robot: median [7.623558248282929, 7.1448155609219235] mm per view (centre pose: True)
+[16:07:55] [A2] object (no segmentation model): start 269 pts (held_and_left), goal 252 pts (arrived_cluster; centroid 15 mm from the true target body, logged only)
+[16:07:55] [A2] start: 60 object rows of 5120 scene rows; goal object 91 points
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[16:08:02] [A2] production scene: 1024 FK hand + 5120 camera points (4612 seen); FK vs mesh hand rows max 0.00 mm
+[16:08:02] [A2] camera alignment to the FK robot: median [7.764513007340825, 7.209042097235929] mm per view (centre pose: True)
+[16:08:02] [A2] object (no segmentation model): start 459 pts (held_and_left), goal 475 pts (arrived_cluster; centroid 30 mm from the true target body, logged only)
+[16:08:03] [A2] start: 166 object rows of 5120 scene rows; goal object 168 points
+[16:09:32] [A2] demo_118: success True (success), 4 replans, final 81.3 mm, 120 s
+[16:09:32] [A2] demo_831_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "16:07:39"} (5 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in +X direction
+compute new reset action for right controller undder absolute mode
+[16:09:52] [A2] production scene: 1024 FK hand + 5120 camera points (3608 seen); FK vs mesh hand rows max 0.00 mm
+[16:09:52] [A2] camera alignment to the FK robot: median [6.735135071902188, 8.252514249142882] mm per view (centre pose: True)
+[16:09:52] [A2] object (no segmentation model): start 291 pts (held_and_left), goal 301 pts (arrived_cluster; centroid 51 mm from the true target body, logged only)
+[16:09:52] [A2] start: 147 object rows of 5120 scene rows; goal object 108 points
+[16:11:34] [A2] demo_170: success True (success), 4 replans, final 93.2 mm, 122 s
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -X direction
+compute new reset action for right controller undder absolute mode
+[16:11:54] [A2] production scene: 1024 FK hand + 5120 camera points (4720 seen); FK vs mesh hand rows max 0.00 mm
+[16:11:54] [A2] camera alignment to the FK robot: median [7.662815303557306, 8.014781225109182] mm per view (centre pose: True)
+[16:11:55] [A2] object (no segmentation model): start 235 pts (held_and_left), goal 214 pts (arrived_cluster; centroid 311 mm from the true target body, logged only)
+[16:11:55] [A2] start: 88 object rows of 5120 scene rows; goal object 80 points
+[16:12:48] [A2] demo_769: success False (stalled), 16 replans, final 364.1 mm, 331 s
+[16:12:48] [A2] demo_831_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "16:07:39"} (17 s ago) -> skip
+[16:12:48] [A2] demo_1364_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2710592, "slurm_job": "1142285", "time": "16:11:34"} (1 s ago) -> skip
+[robosuite WARNING] The config has defined for the controller "torso", but the robot does not have this component. Skipping, but make sure this is intended.Removing the controller config for torso from self.part_controller_config. (robot.py:151)
+self.use_distractors: True
+ROBOT_OFFSET_TO_OBJECT_IN_X:  [-0.1, 0.1, -0.2, 0.2, -0.3, 0.3, -0.4, 0.4]
+ROBOT_INIT_HEIGHT_DELTA:  0.1
+ROBOT_OFFSET_TO_COUNTER_IN_Y_MIN:  -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Using y offset to the kitchen counter when placing the robot: -0.45
+Hitting condition where robot moves in -Y direction
+compute new reset action for right controller undder absolute mode
+[16:13:34] [A2] production scene: 1024 FK hand + 5120 camera points (8572 seen); FK vs mesh hand rows max 0.00 mm
+[16:13:34] [A2] camera alignment to the FK robot: median [6.868772786737056, 7.683382926560507] mm per view (centre pose: True)
+[16:13:35] [A2] object (no segmentation model): start 149 pts (held_and_left), goal 262 pts (arrived_cluster; centroid 21 mm from the true target body, logged only)
+[16:13:36] [A2] start: 34 object rows of 5120 scene rows; goal object 97 points
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    [16:17:16] [A2] demo_1311: success True (success), 10 replans, final 93.6 mm, 268 s
+[16:17:16] [A2] demo_1008_place.lock: held by {"host": "dipper.doc.ic.ac.uk", "pid": 2699075, "slurm_job": "1142285", "time": "16:15:48"} (10 s ago) -> skip
+[16:17:34] [A2] demo_1008: success True (success), 3 replans, final 57.1 mm, 106 s
+[16:17:34] [A2] demo_731_place.lock: held by {"host": "gpu19", "pid": 1446676, "slurm_job": null, "time": "16:17:16"} (18 s ago) -> skip
+Exception ignored in: <function Renderer.__del__ at 0x745f7c168160>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 335, in __del__
+    self.close()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 321, in close
+    self._gl_context.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x745ef91886c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x745f7c630340>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x745f7c630340>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x745f7d32bc40>,
+	),
+	result = 0
+)
+Exception ignored in: <function GLContext.__del__ at 0x745f7c6777f0>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 138, in __del__
+    self.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x745ef91886c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x745f7c630340>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x745f7c630340>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x745f7d32bc40>,
+	),
+	result = 0
+)
+[16:18:15] [A2] demo_1364: success False (stalled), 17 replans, final 240.4 mm, 401 s
+[16:18:15] [A2] demo_731_place.lock: held by {"host": "gpu19", "pid": 1446676, "slurm_job": null, "time": "16:17:16"} (59 s ago) -> skip
+Exception ignored in: <function Renderer.__del__ at 0x75487fce8160>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 335, in __del__
+    self.close()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/renderer.py", line 321, in close
+    self._gl_context.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7547fd6b6d40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7548801b0340>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7548801b0340>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x754880f27c40>,
+	),
+	result = 0
+)
+Exception ignored in: <function GLContext.__del__ at 0x7548801f37f0>
+Traceback (most recent call last):
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 138, in __del__
+    self.free()
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 131, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE,
+  File "/vol/dissolve/vinay/envs/lawm-model/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7547fd6b6d40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7548801b0340>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7548801b0340>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x754880f27c40>,
+	),
+	result = 0
+)
+[16:20:49] [A2] demo_731_place.lock: held by {"host": "gpu19", "pid": 1446676, "slurm_job": null, "time": "16:17:16"} (213 s ago) -> skip
+[16:22:11] [A2] demo_731_place.lock: held by {"host": "gpu19", "pid": 1446676, "slurm_job": null, "time": "16:17:16"} (295 s ago) -> skip

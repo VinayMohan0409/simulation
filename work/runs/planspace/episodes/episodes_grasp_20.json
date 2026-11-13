@@ -1,0 +1,182 @@
+{
+ "task": "grasp",
+ "checked": {
+  "demo_133": {
+   "start_distance_m": 0.5755232258276491,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5755232258276491,
+   "eligible": true
+  },
+  "demo_606": {
+   "start_distance_m": 0.26417273589353496,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.26417273589353496,
+   "eligible": true
+  },
+  "demo_1364": {
+   "start_distance_m": 0.4181416544557871,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.4181416544557871,
+   "eligible": true
+  },
+  "demo_1208": {
+   "start_distance_m": 0.5171807344691893,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5167832386054949,
+   "eligible": true
+  },
+  "demo_1341": {
+   "start_distance_m": 0.6686110589901185,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.6686110589901185,
+   "eligible": true
+  },
+  "demo_1311": {
+   "start_distance_m": 0.5208814878884992,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5208814878884992,
+   "eligible": true
+  },
+  "demo_1008": {
+   "start_distance_m": 0.19634966668770887,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.19634058289436038,
+   "eligible": true
+  },
+  "demo_870": {
+   "start_distance_m": 0.35874038637052497,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.3586451416851348,
+   "eligible": true
+  },
+  "demo_686": {
+   "start_distance_m": 0.5762670360381029,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5762670360381029,
+   "eligible": true
+  },
+  "demo_1076": {
+   "start_distance_m": 0.5189821728568147,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5186556291287295,
+   "eligible": true
+  },
+  "demo_665": {
+   "start_distance_m": 0.5761620671606916,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5761620671606916,
+   "eligible": true
+  },
+  "demo_1142": {
+   "start_distance_m": 0.36478200837256536,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.3646368825582613,
+   "eligible": true
+  },
+  "demo_793": {
+   "start_distance_m": 0.5177053528381468,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5177053528381468,
+   "eligible": true
+  },
+  "demo_131": {
+   "start_distance_m": 0.48216630671161453,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.4821576291139291,
+   "eligible": true
+  },
+  "demo_952": {
+   "start_distance_m": 0.19752329855914127,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.19738024068616533,
+   "eligible": true
+  },
+  "demo_907": {
+   "start_distance_m": 0.19891851080634274,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.19890072587902893,
+   "eligible": true
+  },
+  "demo_1207": {
+   "start_distance_m": 0.19785260149337922,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.19785260149337922,
+   "eligible": true
+  },
+  "demo_769": {
+   "start_distance_m": 0.2649021517673923,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.26483490601677345,
+   "eligible": true
+  },
+  "demo_731": {
+   "start_distance_m": 0.5756495395895679,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5756495395895679,
+   "eligible": true
+  },
+  "demo_118": {
+   "start_distance_m": 0.5761117019769985,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5759345355048174,
+   "eligible": true
+  },
+  "demo_831": {
+   "start_distance_m": 0.3463201954226677,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.3463201954226677,
+   "eligible": true
+  },
+  "demo_170": {
+   "start_distance_m": 0.5762423395073734,
+   "start_success": false,
+   "hold_success": false,
+   "hold_min_distance_m": 0.5762423395073734,
+   "eligible": true
+  }
+ },
+ "selected": [
+  "demo_133",
+  "demo_606",
+  "demo_1364",
+  "demo_1208",
+  "demo_1341",
+  "demo_1311",
+  "demo_1008",
+  "demo_870",
+  "demo_686",
+  "demo_1076",
+  "demo_665",
+  "demo_1142",
+  "demo_793",
+  "demo_131",
+  "demo_952",
+  "demo_907",
+  "demo_1207",
+  "demo_769",
+  "demo_731",
+  "demo_118"
+ ],
+ "done": true
+}

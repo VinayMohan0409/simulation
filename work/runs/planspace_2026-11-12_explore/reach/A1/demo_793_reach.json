@@ -1,0 +1,91 @@
+{
+ "demo": "demo_793",
+ "task": "reach",
+ "arm": "A1",
+ "seed": 799743789,
+ "success": true,
+ "holds_at_end": true,
+ "stop_reason": "success",
+ "n_replans": 6,
+ "final_error_mm": 108.85864542890396,
+ "wall_seconds": 195.1,
+ "records": [
+  {
+   "replan": 0,
+   "error_mm": 243.87663869136577,
+   "commanded_mm": 27.976228143879155,
+   "executed": "best_sample",
+   "plan_cost": 231.72596102952957,
+   "predicted_error_mm": 133.53628540039062,
+   "streak": 0,
+   "plan_seconds": 28.393,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.7501707591710844,
+   "phase_changed": false
+  },
+  {
+   "replan": 1,
+   "error_mm": 212.29004924234857,
+   "commanded_mm": 32.68718953368744,
+   "executed": "best_sample",
+   "plan_cost": 209.7345125079155,
+   "predicted_error_mm": 123.51737976074219,
+   "streak": 0,
+   "plan_seconds": 27.152,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.634681111935596,
+   "phase_changed": false
+  },
+  {
+   "replan": 2,
+   "error_mm": 172.9635491607437,
+   "commanded_mm": 41.737916587862934,
+   "executed": "best_sample",
+   "plan_cost": 178.60648214817047,
+   "predicted_error_mm": 95.10848236083984,
+   "streak": 0,
+   "plan_seconds": 19.062,
+   "wm_calls": 256,
+   "fit_residual_mm": 2.063027508833483,
+   "phase_changed": false
+  },
+  {
+   "replan": 3,
+   "error_mm": 154.5897877438767,
+   "commanded_mm": 22.847177011037385,
+   "executed": "best_sample",
+   "plan_cost": 149.2116413116455,
+   "predicted_error_mm": 76.04048919677734,
+   "streak": 0,
+   "plan_seconds": 18.237,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.8860127738373937,
+   "phase_changed": false
+  },
+  {
+   "replan": 4,
+   "error_mm": 133.40011301166314,
+   "commanded_mm": 28.321994674663344,
+   "executed": "best_sample",
+   "plan_cost": 132.66927868127823,
+   "predicted_error_mm": 66.84163665771484,
+   "streak": 5,
+   "plan_seconds": 27.734,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.4802018688433953,
+   "phase_changed": false
+  },
+  {
+   "replan": 5,
+   "error_mm": 108.85864542890396,
+   "commanded_mm": 27.631003482323923,
+   "executed": "best_sample",
+   "plan_cost": 113.4824286699295,
+   "predicted_error_mm": 33.607913970947266,
+   "streak": 10,
+   "plan_seconds": 27.689,
+   "wm_calls": 256,
+   "fit_residual_mm": 1.659247320198162
+  }
+ ]
+}

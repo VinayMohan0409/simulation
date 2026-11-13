@@ -1,0 +1,1 @@
+Action arm run with the old action prior (independent draws of cumulative chunk positions: unrealistic 10-15 cm steps); superseded by the per-step increment prior (maps/action_prior.npz). Not part of the results.
